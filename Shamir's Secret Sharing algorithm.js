@@ -62,5 +62,5 @@ testCases.forEach((caseData, index) => {
 let decodedPoints = decodeValues(caseData);
     let requiredPoints = decodedPoints.slice(0, caseData.keys.k); // Use first k points
     let secretC = lagrangeInterpolation(requiredPoints);
-    console.log(Secret C for Test Case ${index + 1}: ${secretC});
+    console.log(`Secret C for Test Case ${index + 1}: ${secretC}`);
 });
